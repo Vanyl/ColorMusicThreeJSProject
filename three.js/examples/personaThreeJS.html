@@ -301,6 +301,8 @@
                         if(ellapsedTime > 18550 && ellapsedTime < 19500){ 
                             camera.position.z = 50
                             camera.rotation.x = 0.01;
+                            camera.rotation.y -= 0.001; 
+                            
                         }
                         
                         if(ellapsedTime > 20500 && ellapsedTime < 21000){ 
@@ -321,43 +323,71 @@
                             camera.position.z = 70
                             camera.rotation.x = 0.01;
                         }
+                        if(ellapsedTime > 22500 && ellapsedTime < 32000){ 
+                            camera.position.z = 65
+                            
+                        }
                         if(ellapsedTime > 32000 && ellapsedTime < 39550){ 
                             camera.position.z = 30
-                            camera.rotation.x = 0.01;
-                            camera.rotation.z = -0.01
+                            camera.rotation.x = -0.01;
                         }
                         
                         //1st violon
-                        if(ellapsedTime > 39500 && ellapsedTime < 40500){} //violon
+                        if(ellapsedTime > 39500 && ellapsedTime < 40000){
+                            camera.rotation.y += 0.01;                           
+                        }
+                        if(ellapsedTime > 40000 && ellapsedTime < 40500){
+                            camera.rotation.y -= 0.01;                           
+                        } 
                         
                         //2st violon
-                        if(ellapsedTime > 43500 && ellapsedTime < 44500){} //violon
+                        if(ellapsedTime > 43500 && ellapsedTime < 44000){
+                            camera.rotation.y += 0.01; 
+                        } //violon
+                        if(ellapsedTime > 44000 && ellapsedTime < 44500){
+                        camera.rotation.y -= 0.01;
+                        }
                         
                         //3 violon
-                        if(ellapsedTime > 47500 && ellapsedTime < 48500){} //violon
+                        if(ellapsedTime > 47500 && ellapsedTime < 48000){
+                            camera.rotation.y += 0.01; 
+                        }
+                        if(ellapsedTime > 48000 && ellapsedTime < 48500){
+                            camera.rotation.y -= 0.01;                            
+                        }
                         
                         //4 violon
-                        if(ellapsedTime > 51500 && ellapsedTime < 52500){} //violon
-                        
+                        if(ellapsedTime > 51000 && ellapsedTime < 51500){
+                            camera.rotation.y += 0.01;                             
+                        }
+                        if(ellapsedTime > 51500 && ellapsedTime < 52000){
+                            camera.rotation.y -= 0.01;                            camera.position.z = 60
+                             
+                        }
                         
                         
                         if(ellapsedTime > 52500 && ellapsedTime < 53000){
+                            camera.rotation.x = 0.01;                            
                             camera.position.y = 10
+                            camera.position.z = 30
+
                         } //double pic violon
                         if(ellapsedTime > 53000 && ellapsedTime < 54999){
                             camera.position.y = -10
+                            camera.position.z = 60
+
                         }
                         if(ellapsedTime > 53500 && ellapsedTime < 54000){
-                            camera.rotation.x = 0.0001;
+                            camera.rotation.x = 0.01;
                             camera.position.z = 80
-                            camera.position.y = 0.01
+                            camera.position.y = 0
 
                         } // début 'pause'
-                        if(ellapsedTime > 54000 && ellapsedTime < 54500){camera.position.z = 60}
-                        if(ellapsedTime > 54500 && ellapsedTime < 55500){camera.position.z = 80}
-                        if(ellapsedTime > 55500 && ellapsedTime < 56500){camera.position.z = 60}
-                        if(ellapsedTime > 56500 && ellapsedTime < 57500){camera.position.z = 80}
-                        if(ellapsedTime > 57500 && ellapsedTime < 58500){camera.position.z = 60}
+                        if(ellapsedTime > 54000 && ellapsedTime < 54500){camera.position.z = 30}
+                        if(ellapsedTime > 54500 && ellapsedTime < 55500){camera.position.z = 60}
+                        if(ellapsedTime > 55500 && ellapsedTime < 56500){camera.position.z = 30}
+                        if(ellapsedTime > 56500 && ellapsedTime < 57500){camera.position.z = 60}
+                        if(ellapsedTime > 57500 && ellapsedTime < 58500){camera.position.z = 30}
 
                         
                         if(ellapsedTime > 58500 && ellapsedTime < 100000){{camera.position.z = 35}}
