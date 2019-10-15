@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+<body>
+    <script>
+    function init() {
+        //...
+        var startTime = new Date().getTime(); //permet de noter l'heure qu'il est au moment où l'app se lance
+        render();
+    }
+    function render(){
+        nowTime = new Data().getTime(); //notel h'eure qui l'est
+        ellapsedTime = nowTime - startTime();
+        if(ellapsedTime => 1000 && ellapsedTime < 2000) { //entre sec1 - sec2 :
+            //...
+            camera.rotation.z += 0.1;
+        }
+        requestAnimationFrame(render);
+        renderer.render(scene,camera);
+    }
+        
+    
+    </script> 
+</body>
+</html>
